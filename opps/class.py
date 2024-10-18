@@ -28,8 +28,22 @@ class Dog:
     
     # Class Attributes
       attr1 = "mammal"
+      attr2 = "dog"
 
     # Instance attribute
-      def __init__(self, name):
-           self.name = name
-         
+      def fun(self):
+           print("I'm a ", self.attr1)
+           print("I'm a", self.attr2)
+
+Rodger = Dog()
+
+print(Rodger.attr1)
+Rodger.fun()
+
+class SELF:
+     def __init__(self, name, company):
+          self.name = name
+          self.company = company
+
+     def show(self):
+          print("Hello my name is " + self.name + "and" +"work in" + self.company + " ")
